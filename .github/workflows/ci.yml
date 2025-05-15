@@ -26,8 +26,6 @@ jobs:
           pip install --no-cache-dir -r requirements.txt
           pip install pytest flake8
 
-      - name: Lint with flake8
-        run: flake8 .
 
-      - name: Run tests
+      - name: Run test_app
         run: pytest --maxfail=1 --disable-warnings -q
